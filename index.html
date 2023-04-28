@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo de Página HTML com Formulário</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="./img/blw.png"></h1>
+    </header>
+    <form id="form-contato" method="post" action="form.php" enctype="multipart/form-data">
+        <label for="nome">Nome *</label>
+        <small aria-error="nome" class="none">Campo obrigatório</small>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">E-mail *</label>
+        <small aria-error="email" class="none">Campo obrigatório</small>
+        <input type="email" id="email" name="email">
+
+        <label for="mensagem">Mensagem *</label>
+        <small aria-error="mensagem" class="none">Campo obrigatório</small>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+        <label for="anexo">Anexo</label>
+        <input type="file" id="anexo" name="anexo">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div>
+        <h1 class="display"></h1>
+        <h1 class="display"></h1>
+        <h1 class="display"></h1>
+        <h1 class="display"></h1>
+    </div>
+
+    <footer>
+        <p>Teste realizdo por Lukas Maciel</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

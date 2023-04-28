@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  webserver:
+    image: php:8.0-apache
+    volumes:
+      - .:/var/www/html
+      - ./local.ini:/usr/local/etc/php/conf.d/local.ini
+    ports:
+      - 8001:80
